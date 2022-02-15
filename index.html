@@ -25,17 +25,32 @@
                   <script src="java.js"></script>
             </div>
             <div class="cardmid">
-                <form id="choices" action="" method="post">
-                    <div><input id="choseYes" type="radio" name="picked" value="yes" /> YES!!</div>
-                    <div><input id="choseNo"type="radio" name="picked" value="no" /> No :(</div>
-                  </form>
+                <div id="choices">
+                    <label for="chkYes">
+                     <input type="radio" id="chkYes" name="chk" onclick="ShowHideDiv()" />
+                        Yes
+                    </label>
+                    <label for="chkNo">
+                        <input type="radio" id="chkNo" name="chk" onclick="ShowHideDiv2()" />
+                        No
+                    </label>
+                </div>
             </div>
             <div class="cardbottom">
-                <div class="yesOrNo">5</div>
+                <div id="clkYes" style="display: none">
+                    "YAY"
+                </div>
+                <div id="clkNo" style="display: none">
+                    "oh no...... <br> but wait!! maybe you could pick another option?" <br>
+                    <img url("../valentine/img/hearts.png");
+                </div>
+                
             </div>
         </div>
         <div class="cardright"></div>
     </div>
+
+
     
 </body>
 </html>

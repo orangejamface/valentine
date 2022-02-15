@@ -4,7 +4,7 @@ document.getElementById("choseYes").addEventListener("click", yes);
 document.getElementById("choseNo").addEventListener("click", no);
 
 function toggleText() {
-    var textBox = document.getElementById("txtbox");
+    let textBox = document.getElementById("txtbox");
     switch (textBox.className) {
         case "txt1": {
             textBox.innerHTML = "x You deserve x";
@@ -54,18 +54,38 @@ function swapClasses(elem, targetClass) {
 }
 
 function choiceAppear() {
-    var T = document.getElementById("choices");
+    let T = document.getElementById("choices");
     T.style.display = "flex"; 
 }
 
-function yes()  {
-    var choiceText = document.getElementById("yesOrNo");
-    switch (choiceText.className) {
-        case "txt1": {
-            choiceText.innerHTML = "x You deserve x";
-            swapClasses(choiceText, "txt2");
-            break;
-        }
-    }
+// function yes()  {
+//     var choiceText = document.getElementById("yesOrNo");
+//     switch (choiceText.className) {
+//         case "txt1": {
+//             choiceText.innerHTML = "x You deserve x";
+//             swapClasses(choiceText, "txt2");
+//             break;
+//         }
+//     }
+// }
+
+function ShowHideDiv() {
+    var chkYes = document.getElementById("chkYes");
+    var dvtext = document.getElementById("clkYes");
+    var chkNo = document.getElementById("chkNo");
+    var dvtext2 = document.getElementById("clkNo");
+    dvtext.style.display = chkYes.checked ? "flex" : "none";
+    dvtext2.style.display = chkNo.checked ? "flex" : "none";
 }
+
+function ShowHideDiv2() {
+    var chkNo = document.getElementById("chkNo");
+    var dvtext = document.getElementById("clkNo");
+    var chkYes = document.getElementById("chkYes");
+    var dvtext2 = document.getElementById("clkYes");
+    dvtext.style.display = chkNo.checked ? "flex" : "none";
+    dvtext2.style.display = chkYes.checked ? "flex" : "none";
+    
+}
+
 
