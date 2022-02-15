@@ -1,6 +1,5 @@
 *   {
     box-sizing: border-box;
-   
 }
 
 
@@ -10,7 +9,8 @@
     border: 6px solid rgba(134, 37, 143, 0.358);
     margin: 40px 200px;
     width: 800px;
-    
+    background-color: rgba(235, 0, 188, 0.317);
+    border-radius: 15px;
    
 }
 
@@ -18,6 +18,7 @@
     background-image: url("../valentine/img/hearts.png");
     width: 10vh;
     margin: 2px;
+    border-radius: 15px;
 }
 
 .cardcenter {
@@ -38,13 +39,11 @@
     height: 30vh;
     margin: 5px;
     padding: 5px;
-}
-clickbox   {
-  
+    border-radius: 15px;
 }
 
 .arrow  {
-    max-width: 10%;
+    width: 80px;
     max-height: auto;
     transform: rotate(-45deg);
 }
@@ -70,11 +69,10 @@ clickbox   {
 }
 
 .cardbottom     {
-    font-family: fantasy;
-    font-size: 5vh;
-    text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    font-family: fantasy;
+    font-size: 3vh;
     align-items: center;
     border: 6px solid rgba(134, 37, 143, 0.358);
     width: 100%;
@@ -83,6 +81,44 @@ clickbox   {
     
 }
 
+#clkNo     {
+    margin: 20px;
+    display: none;
+    align-items: center;
+    flex: 1;
+    
+}
+
+#clkYes     {
+    margin: 20px;
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    font-size: 2vh;
+    
+}
+
+.arrowcontain   {
+    display: flex;   
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+.img    {
+    text-align: center;
+    margin: 10px;
+}
+.divcenter {
+    width: 100%;
+}
+
+.paddingneeded  {
+   text-align: right;
+}
 #txtbox {
     
     font-family: 'Shizuru', cursive;

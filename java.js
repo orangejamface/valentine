@@ -70,22 +70,30 @@ function choiceAppear() {
 // }
 
 function ShowHideDiv() {
-    var chkYes = document.getElementById("chkYes");
-    var dvtext = document.getElementById("clkYes");
-    var chkNo = document.getElementById("chkNo");
-    var dvtext2 = document.getElementById("clkNo");
+    let chkYes = document.getElementById("chkYes");
+    let dvtext = document.getElementById("clkYes");
+    let chkNo = document.getElementById("chkNo");
+    let dvtext2 = document.getElementById("clkNo");
     dvtext.style.display = chkYes.checked ? "flex" : "none";
     dvtext2.style.display = chkNo.checked ? "flex" : "none";
 }
 
 function ShowHideDiv2() {
-    var chkNo = document.getElementById("chkNo");
-    var dvtext = document.getElementById("clkNo");
-    var chkYes = document.getElementById("chkYes");
-    var dvtext2 = document.getElementById("clkYes");
+    let chkNo = document.getElementById("chkNo");
+    let dvtext = document.getElementById("clkNo");
+    let chkYes = document.getElementById("chkYes");
+    let dvtext2 = document.getElementById("clkYes");
     dvtext.style.display = chkNo.checked ? "flex" : "none";
     dvtext2.style.display = chkYes.checked ? "flex" : "none";
     
+}
+
+function showArrow()    {
+    let chkNo = document.getElementById("arrow");
+    let arrow = document.getElementById("arrowappear");
+    arrow.style.display = chkNo.checked ? "flex" : "none";
+    
+
 }
 
 

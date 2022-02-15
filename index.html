@@ -31,18 +31,32 @@
                         Yes
                     </label>
                     <label for="chkNo">
-                        <input type="radio" id="chkNo" name="chk" onclick="ShowHideDiv2()" />
+                        <input type="radio" id="chkNo" name="chk" onclick="ShowHideDiv2() " />
                         No
                     </label>
+                    <div class="clkNo" style="display: none">wefw</div>
                 </div>
             </div>
             <div class="cardbottom">
-                <div id="clkYes" style="display: none">
-                    "YAY"
+                
+                <div id="clkYes">
+                    <div>x Now that you x <br><br>x Accept my heart x<br><br> x Fridays dance! x<br><br> x is on the cards x</div>
+                    <video width="40%" controls autoplay>
+                        <source src="vid/charliebrown.mp4" type="video/mp4">
+                        <source src="vid/charliebrown.mp4" type="video/ogg"></video>
                 </div>
-                <div id="clkNo" style="display: none">
-                    "oh no...... <br> but wait!! maybe you could pick another option?" <br>
-                    <img url("../valentine/img/hearts.png");
+                
+                <div id="clkNo" >
+                    <div class="arrowcontain">
+                        <div><img class="arrow" alt="arrow" src="img/arrow2.png"> </div>
+                        <div class="divcenter paddingneeded">"oh no...... <br> but wait!!.. </div> 
+                    </div>
+                    <div class="img"><img alt="sad" src="img/ohno.png" width="100%" ></div>
+                    <div class="divcenter">maybe you could...<br> pick another option?"</div>
+                    <audio autoplay>
+                        <source src="audio/sad.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                      </audio>
                 </div>
                 
             </div>
