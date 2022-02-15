@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@700&family=Shizuru&display=swap" rel="stylesheet">    
     <title>Be My Valentine</title>
 </head>
 <body>
@@ -14,17 +17,21 @@
         <div class="cardleft"></div>
         <div class="cardcenter">
             <div class="cardtop">
-                <div>DARLING</div>
-                <img class="arrow" src="img/arrow2.png" alt="Girl in a jacket">
-                <div>click</div>
+                <div class="clickbox">
+                    <p id="txtbox" class="txt1">DARLING</p>
+                  </div>
+                  
+                  <button id="btn_next" type="button">click me</button>
+                  <script src="java.js"></script>
             </div>
             <div class="cardmid">
-                <div>2</div>
-                <div>4</div>
+                <form id="choices" action="" method="post">
+                    <div><input id="choseYes" type="radio" name="picked" value="yes" /> YES!!</div>
+                    <div><input id="choseNo"type="radio" name="picked" value="no" /> No :(</div>
+                  </form>
             </div>
             <div class="cardbottom">
-                <div>5</div>
-                <div>6</div>
+                <div class="yesOrNo">5</div>
             </div>
         </div>
         <div class="cardright"></div>

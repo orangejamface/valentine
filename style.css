@@ -1,5 +1,6 @@
 *   {
     box-sizing: border-box;
+   
 }
 
 .card    {
@@ -7,7 +8,7 @@
     justify-content: space-evenly;
     border: 6px solid rgba(134, 37, 143, 0.358);
     margin: 40px 200px;
-    width: 600px;
+    width: 800px;
     
    
 }
@@ -29,12 +30,16 @@
 .cardtop    {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     border: 6px solid rgba(134, 37, 143, 0.358);
     width: 100%;
     height: 30vh;
     margin: 5px;
+    padding: 5px;
+}
+clickbox   {
+  
 }
 
 .arrow  {
@@ -45,14 +50,22 @@
 
 .cardmid       {
     display: flex;
-    justify-content: space-around;
+
     align-items: center;
     border: 6px solid rgba(134, 37, 143, 0.358);
     width: 100%;
     height: 20vh;
     margin: 5px;
-   
+}
+
+#choices    {
     
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    font-family: 'Shizuru', cursive;
+    font-size: 10vh;
 }
 
 .cardbottom     {
@@ -64,4 +77,40 @@
     height: 30vh;
     margin: 5px;
     
+}
+
+#txtbox {
+    
+    font-family: 'Shizuru', cursive;
+    text-align: center;
+    border-radius: 15px;
+    padding: 3vh;
+    margin: 0px;
+    font-size: 6vh;
+
+}
+
+.txt1     {
+    background-color: rgba(242, 0, 255, 0.529);
+}
+.txt2     {
+    background-color: rgba(226, 43, 220, 0.317);
+}
+.txt3     {
+    background-color: rgba(154, 1, 249, 0.612);
+}
+.txt4     {
+    background-color: rgba(226, 43, 43, 0.502);
+}
+.txt5     {
+    background-color: rgba(137, 43, 226, 0.399);
+}
+.txt6     {
+    background-color: rgba(255, 162, 0, 0.584);
+}
+.txt7     {
+    background-color: rgba(226, 43, 43, 0.283);
+}
+.txt8     {
+    background-color: rgba(226, 43, 43, 0.66);
 }
