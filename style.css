@@ -105,7 +105,6 @@
     display: flex;   
     justify-content: space-between;
     width: 100%;
-    
 }
 
 .img    {
@@ -120,14 +119,12 @@
    text-align: right;
 }
 #txtbox {
-    
     font-family: 'Shizuru', cursive;
     text-align: center;
     border-radius: 15px;
     padding: 3vh;
     margin: 0px;
     font-size: 6vh;
-
 }
 
 .txt1     {

@@ -1,7 +1,6 @@
 
+
 document.getElementById("btn_next").addEventListener("click", toggleText);
-document.getElementById("choseYes").addEventListener("click", yes);
-document.getElementById("choseNo").addEventListener("click", no);
 
 function toggleText() {
     let textBox = document.getElementById("txtbox");
@@ -54,20 +53,9 @@ function swapClasses(elem, targetClass) {
 }
 
 function choiceAppear() {
-    let T = document.getElementById("choices");
-    T.style.display = "flex"; 
+    let yesOrNo = document.getElementById("choices");
+    yesOrNo.style.display = "flex";
 }
-
-// function yes()  {
-//     var choiceText = document.getElementById("yesOrNo");
-//     switch (choiceText.className) {
-//         case "txt1": {
-//             choiceText.innerHTML = "x You deserve x";
-//             swapClasses(choiceText, "txt2");
-//             break;
-//         }
-//     }
-// }
 
 function ShowHideDiv() {
     let chkYes = document.getElementById("chkYes");
@@ -85,15 +73,12 @@ function ShowHideDiv2() {
     let dvtext2 = document.getElementById("clkYes");
     dvtext.style.display = chkNo.checked ? "flex" : "none";
     dvtext2.style.display = chkYes.checked ? "flex" : "none";
-    
 }
 
-function showArrow()    {
+function showArrow() {
     let chkNo = document.getElementById("arrow");
     let arrow = document.getElementById("arrowappear");
     arrow.style.display = chkNo.checked ? "flex" : "none";
-    
-
 }
 
 
